@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jqueries</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                $('#nome').on('input', function() {
+                    console.log($(this).val());
+                });
+
+                $('#onde-encontrou').on('change', function() {
+                    console.log($(this).val());
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+
+        <label for="onde-encontrou" style="margin-left: 10px;">Onde nos encontrou?</label>
+
+        <select id="onde-encontrou">
+            <option value="0">Google</option>
+            <option value="1">Facebook</option>
+            <option value="2">Instagram</option>
+            <option value="3">Outro</option>
+        </select>
+
+    </body>
+</html>
