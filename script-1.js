@@ -6,4 +6,8 @@ function manipulateAttributes() {
     $("#teste2").attr("style", "width: 400px; height: 200px; background-color: blue;");
 }
 
-$(manipulateAttributes);
+function manipulateInnerHtml() {
+    $("#teste2").html("<p>Olá, eu sou um parágrafo criado dinamicamente!</p>");
+}
+
+$(manipulateInnerHtml);
