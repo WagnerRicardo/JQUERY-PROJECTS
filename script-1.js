@@ -3,7 +3,7 @@ function logHtmlObject() {
 }
 
 function manipulateAttributes() {
-    $("#teste1").attr("src", "img/esfera_2.png");
+    $("#teste2").attr("style", "width: 400px; height: 200px; background-color: blue;");
 }
 
 $(manipulateAttributes);
