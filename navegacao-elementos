@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jqueries</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+
+        <div id="topo">
+            <ul class="menu">
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
+        </div>
+
+        <div id="pagina">
+            <div class="secao1">
+                <div class="subsecao1"></div>
+            </div>
+            <div class="secao2">
+                <h1></h1>
+            </div>
+        </div>
+
+        <div id="rodape">
+            <div>
+                <p></p>
+                <span id="opcao1"></span>
+            </div>
+        </div>
+
+    </body>
+</html>
