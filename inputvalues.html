@@ -7,20 +7,17 @@
         <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
         <script>
             $(function() {
-                $('#nome').on('input', function() {
-                    console.log($(this).val());
-                });
-
-                $('#onde-encontrou').on('change', function() {
-                    console.log($(this).val());
-                });
-            });
+                $.each($('.interesses:checked'), (indice, valor) => {
+                    console.log(indice, valor);
+                    }
+                );
         </script>
     </head>
     <body>
 
-        <label for="nome">Nome:</label>
+        <label style="margin-left: 10px;" for="nome">Nome:</label>
         <input type="text" id="nome">
+        <br/>
 
         <label for="onde-encontrou" style="margin-left: 10px;">Onde nos encontrou?</label>
 
@@ -30,6 +27,20 @@
             <option value="2">Instagram</option>
             <option value="3">Outro</option>
         </select>
+        <br/>
 
+        <label for="sexo" style="margin-left: 10px;">Sexo:</label><br/>
+        <input type="radio" name="sexo" value="m" class="sexo">Masculino<br/>
+        <input type="radio" name="sexo" value="f" class="sexo">Feminino<br/>
+        <input type="radio" name="sexo" value="o" class="sexo">Outro<br/>
+        <br/>
+
+        <label for="interesses" style="margin-left: 10px;">Interesses:</label>
+        <br/>
+        <input type="checkbox" name="interesses" value="0" class="interesses">Programação<br/>
+        <input type="checkbox" name="interesses" value="1" class="interesses">Design<br/>
+        <input type="checkbox" name="interesses" value="2" class="interesses">Marketing<br/>
+
+        
     </body>
 </html>
