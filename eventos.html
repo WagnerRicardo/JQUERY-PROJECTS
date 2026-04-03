@@ -4,40 +4,59 @@
 		<meta charset="UTF-8">
 		<title>jQuery</title>
 
-        <style>
-            .topo {
-                background-color: #333;
-                color: #fff;
-                padding: 10px;
-            }
-        </style>
+		<style>
+			
+		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+
+		</script>
 	</head>
 
 	<body>
 		
 		<div id="topo">
-			<h1>Barra de navegação da aplicação</h1>
+			<h1>Eventos</h1>
 		</div>
 
 		<div>
-			<h3>Contato</h3>
+			<h3>Browser</h3>
+			<span>Onload: </span><span>?</span><br />
+			<span>Scroll: </span><span>?</span><br />
+			<span>Window: </span><span>?</span>
 			<hr />
 
-			<p>Nome:</p>
+			<h3>Mouse</h3>
+			<button type="button">Clique aqui</button>
+			<button type="button">Clique aqui 2x</button>
+			<div style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
+			<span>Resultado do evento sobre a div</span>
+			<hr />
+
+			<h3>Teclado</h3>
+			<span>Nome:</span>
 			<input type="text" />
-			<br />
+			<span>Resultado do evento sobre o input</span>
+			<hr />
 
-			<p>Email:</p>
-			<input type="text" />
-			<br />
+			<h3>Formulário</h3>
+			<form>
+				<span>Nome:</span>
+				<input type="text" />
 
-			<p>Mensagem:</p>
-			<textarea></textarea>
-			<br />
+				<span>E-mail:</span>
+				<input type="text" />
 
-			<button type="button">Enviar</button>
+				<span>Motivo do contato:</span>
+				<select>
+					<option value="">-- Selecione --</option>
+					<option value="duvida">Dúvida</option>
+					<option value="sugestao">Sugestão</option>
+				</select>
+				
+				<button type="button">Enviar</button>
+			</form>
 		</div>
 	</body>
 
