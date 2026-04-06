@@ -11,7 +11,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script>
 			$(document).ready( () => {
-				$('#onload').text('Carregou a página');
+				$('#onload').html('Carregou a página');
 
 				$(window).scroll( () => {
 					$('#scroll').text('Scrollou a página');
@@ -39,8 +39,8 @@
 			<hr />
 
 			<h3>Mouse</h3>
-			<button type="button">Clique aqui</button>
-			<button type="button">Clique aqui 2x</button>
+			<button type="button" id="btn1">Clique aqui</button>
+			<button type="button" id="btn2">Clique aqui 2x</button>
 			<div style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
 			<span>Resultado do evento sobre a div</span>
 			<hr />
