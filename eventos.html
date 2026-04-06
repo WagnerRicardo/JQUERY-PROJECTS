@@ -5,9 +5,7 @@
 		<title>jQuery</title>
 
 		<style>
-			#mouseField {
-				background-color: red;
-			}
+
 		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -24,7 +22,19 @@
 				})
 
 				$('#btn1').mousedown( () => {
-					$('mouseField').css('background-color', 'blue');
+					$('#mouseField').css('background-color', 'blue');
+				})
+
+				$('#btn1').mouseup( () => {
+					$('#mouseField').css('background-color', 'green');
+				})
+
+				$('#btn2').dblclick( () => {
+					$('#mouseField').css('background-color', 'yellow');
+				})
+
+				$('#mouseField').mousemove( e => {
+					$('#mouseResult').text(`X: ${e.pageX} - Y: ${e.pageY}`);
 				})
 			}
 			)
