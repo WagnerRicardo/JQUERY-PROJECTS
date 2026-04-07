@@ -64,6 +64,12 @@
 				$('#mouseField3').mouseleave( () => {
 					$('#divInternaRes').text('Saiu da div interna');
 				})
+
+				//teclado
+
+				$('#teclado').keydown( () => {
+					$('#tecladoResult').text('Pressionou uma tecla');
+				})
 			}
 			)
 		</script>
@@ -98,8 +104,8 @@
 
 			<h3>Teclado</h3>
 			<span>Nome:</span>
-			<input type="text" />
-			<span>Resultado do evento sobre o input</span>
+			<input type="text" id="teclado"/>
+			<span id="tecladoResult">Resultado do evento sobre o input</span>
 			<hr />
 
 			<h3>Formulário</h3>
