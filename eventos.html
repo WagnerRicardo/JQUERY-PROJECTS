@@ -68,7 +68,12 @@
 				//teclado
 
 				$('#teclado').keyup( (e) => {
-					$('#tecladoResult').text(`Tecla: ${e.key} - Código: ${e.keyCode}`);
+					if(e.keyCode < 48 || e.keyCode > 57) {
+						$('#tecladoResult').text('Apenas números são permitidos');
+						$('#teclado').val('');
+					} else {
+						$('#tecladoResult').text('');
+					}
 				})
 			}
 			)
