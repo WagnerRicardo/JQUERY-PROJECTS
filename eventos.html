@@ -5,7 +5,18 @@
 		<title>jQuery</title>
 
 		<style>
-
+			#mouseField2 {
+				background-color: red;
+				width: 200px;
+				height: 100px;
+				padding: 25px 50px;
+				box-sizing: border-box;
+			}
+			#mouseField3 {
+				background-color: white;
+				width: 100px;
+				height: 50px;
+			}
 		</style>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -36,6 +47,23 @@
 				$('#mouseField').mousemove( e => {
 					$('#mouseResult').text(`X: ${e.pageX} - Y: ${e.pageY}`);
 				})
+
+				//mouse entrada e saída
+				$('#mouseField2').mouseenter( () => {
+					$('#divExternaRes').text('Entrou na div externa');
+				})
+
+				$('#mouseField2').mouseleave( () => {
+					$('#divExternaRes').text('Saiu da div externa');
+				})
+
+				$('#mouseField3').mouseenter( () => {
+					$('#divInternaRes').text('Entrou na div interna');
+				})
+
+				$('#mouseField3').mouseleave( () => {
+					$('#divInternaRes').text('Saiu da div interna');
+				})
 			}
 			)
 		</script>
@@ -60,8 +88,12 @@
 			<div style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px" id="mouseField"> </div>
 			<span>Resultado do evento sobre a div</span><span id="mouseResult"></span>
 			<br />
-			<div style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px" id="mouseField"> </div>
-			<span>Resultado do evento sobre a div</span><span id="mouseResult"></span>
+			<div id="mouseField2">
+				<div id="mouseField3"> </div>
+			</div>
+			<span>Div externa:</span><span id="divExternaRes"></span>
+			<br />
+			<span>Div interna:</span><span id="divInternaRes"></span>
 			<hr />
 
 			<h3>Teclado</h3>
