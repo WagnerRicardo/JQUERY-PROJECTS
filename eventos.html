@@ -67,8 +67,8 @@
 
 				//teclado
 
-				$('#teclado').keydown( () => {
-					$('#tecladoResult').text('Pressionou uma tecla');
+				$('#teclado').keyup( (e) => {
+					$('#tecladoResult').text(`Tecla: ${e.key} - Código: ${e.keyCode}`);
 				})
 			}
 			)
