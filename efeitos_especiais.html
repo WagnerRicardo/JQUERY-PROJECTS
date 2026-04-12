@@ -37,9 +37,14 @@
 		<script>
 			$(document).ready(() => {
 				
-				$('#btn1').click(function() {
-					$(this).next().fadeToggle(1000);
+				$('#btn1').click((e) =>{
+					$('#div1').fadeToggle(1000);
 				})
+
+				$('#btn2').click((e) => {
+					$('#div2').slideToggle(1000);
+				})
+				
 				
 			})
 		</script>
