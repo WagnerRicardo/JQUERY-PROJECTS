@@ -37,15 +37,17 @@
 		<script>
 			$(document).ready(() => {
 				
-				$('#btn1').click((e) =>{
+				$('#btn1').click(() =>{
 					$('#div1').fadeToggle(1000);
 				})
 
-				$('#btn2').click((e) => {
+				$('#btn2').click(() => {
 					$('#div2').slideToggle(500);
 				})
 				
-				
+				$('#btn3').click( () => {
+					$('#div3').toggle(100);
+				})
 			})
 		</script>
 	</head>
